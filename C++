@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a, b;
+    char op;
+
+    cout << "Hello, This is a Calculator program :)"<<endl;
+    cout << "Please, enter first number - ";
+    cin >> a;
+    cout << "And now, please enter second number - ";
+    cin >> b;
+    cout << "Which operation do you want to perform? For example ( -, +, *, / ) - ";
+    cin >> op;
+
+    if (op=='-')
+    {
+        cout << a << "-" << b << "=" << (a-b) <<endl;
+    }
+
+    if (op=='+')
+    {
+        cout << a << "+" << b << "=" << (a+b) <<endl;
+    }
+
+    if (op=='*')
+    {
+        cout << a << "*" << b << "=" << (a*b) <<endl;
+    }
+
+    if (op=='/')
+    {
+        cout << a << ":" << b << "=" << (a/b) <<endl;
+    }
+
+    return 0;
+}
